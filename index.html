@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Starter">
+    <meta name="author" content="Admin">
+    <title>JQuery Dashboard</title>
+
+    <link rel="icon" href="images/favicon.png">
+
+    <link rel="stylesheet" href="css/libs/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="js/libs/jquery-ui.min/jquery-ui.min.css">
+
+    <!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+    <div class="bg">
+        <div class="bg__color"></div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="product_page col-6">
+                <ul class="nav justify-content-around col-12">
+                    <li class="nav-item">
+                        <a class="nav-link active text-center" href="#"><i class="far fa-comment-alt"></i><br>INFORMATION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#"><i class="fas fa-cube"></i><br>RATINGS INFO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#"><i class="fas fa-shopping-basket"></i><br>WHERE TO BUY</a>
+                    </li>
+                </ul>
+                <div class="content__wrapper row align-items-content-between">
+                    <div class="img__wrapper col-4">
+                        <figure class="figure">
+                            <img src="images/game.png" class="figure-img img-fluid rounded" alt="...">
+                        </figure>
+                        <p class="rating offset-2 col-8">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                    </div>
+
+                    <div class="text__wrapper col-8">
+                        <div class="header col align-self-start">
+                            <div class="header__text">
+                                <p class="headline">FarCry 4</p>
+                                <p class="headline__info">First Released Nov 17, 2014</p>
+                            </div>
+                            <img class="raiting" src="images/rating.png" alt="">
+                        </div>
+
+                        <p class="text col align-self-center">In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wild region of the Hima
+                            layas struggling under the regime of a despotic self-appointed king.</p>
+                        <div class="pice__wrapper row justify-content-around align-self-end">
+                            <div class="price col-4">
+                                <span class="badge badge-secondary ">20% OFF!</span>
+                                <h3>$59.96</h3>
+                            </div>
+
+                            <button type="button" class="btn btn-success col-4" data-toggle="modal" data-target="#cart">Buy It Now</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">You add to your shopping cart</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body row align-items-center justify-content-between">
+                        <div class="img__wrapper col-3">
+                            <figure class="figure">
+                                <img src="images/game.png" class="figure-img img-fluid rounded" alt="...">
+                                <p class="col-12">
+                                    FarCry 4
+                                </p>
+                            </figure>
+                        </div>
+                        <div class="col-3">
+                            <h2>$59.96</h2>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Scripts -->
+    <script src="js/libs/jquery-3.4.0.min.js"></script>
+    <script src="js/libs/jquery-ui.min/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- LiveReload Script -->
+    <script>
+        document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+
+    </script>
+</body>
+
+</html>
